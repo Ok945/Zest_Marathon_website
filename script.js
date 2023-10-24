@@ -9,7 +9,7 @@ container.addEventListener('animationiteration', () => {
     // Reset the animation to the initial position
     container.style.animation = 'none';
     container.offsetHeight; // Trigger a reflow
-    container.style.animation = 'moveImages 30s linear infinite';
+    container.style.animation = 'moveImages 20s linear infinite';
 });
 
 

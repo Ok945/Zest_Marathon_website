@@ -16,7 +16,7 @@ body {
     width: 100%;
     position: absolute;
     height: 100%;
-    top: -200px; 
+    top: -200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +65,13 @@ body {
     position: absolute;
     display: flex;
     /* 1 row */
-    animation: moveImages 20s linear infinite;
+    animation: moveImages 10s linear infinite;
     z-index: 10;
 }
 
 .humans {
     position: absolute;
     display: flex;
-    /* 1 row */
-    /* animation: moveImages 20s linear infinite; */
     z-index: 12;
     bottom: 2%;
     left: 10%;
@@ -81,31 +79,52 @@ body {
 }
 
 .inner-layer {
-    height: 110vh;
-    width: 100%;
+    /* height: 110vh;
+    width: 100%; */
     position: absolute;
-    animation: moveImages 15s linear infinite;
     display: flex;
     z-index: 5;
     bottom: 5%;
+    animation: moveImages 20s linear(0 0%, 1.4 48.82%) infinite;
 }
 
-#layer3 {
-    height: 100vh;
+#movingimage5,
+#movingimage6,
+#movingimage7,
+#movingimage8 {
+    height: 110vh;
     width: 100%;
-    position: absolute;
+    position: relative;
+
+}
+
+
+
+
+
+
+#layer3 {
+
+    position: relative;
     display: flex;
     z-index: 3;
     bottom: 50%;
-    animation: moveImages 12s linear infinite;
+    left: 200%;
+    animation: moveImages 50s linear(0 0%, 0.44 97.65%) infinite;
 }
+
+
+
+
+
 
 
 
 .mountainimg {
-    position: absolute;
-    width: 151%;
-    height: 171%;
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+
 }
 
 #moving-image1,
@@ -203,4 +222,90 @@ body {
     100% {
         transform: translateX(-100%);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainbody {
+    height: 100vh;
+    width: 100%;
+    background: #172156
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* Styles for small screens go here */
+    #moving-image1,
+    #moving-image2 {
+        height: auto;
+        width: 150%;
+    }
+
+
+    .humans {
+        bottom: -4%;
+    }
+
+    #moving-image3,
+    #moving-image4,
+    #moving-image5,
+    #moving-image6,
+    #moving-image7,
+    #moving-image8,
+    #moving-image9,
+    #moving-image10,
+    #moving-image11 {
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    .inner-layer {
+        bottom: 37%;
+    }
+
+
+    #movingimage5,
+    #movingimage6,
+    #movingimage7,
+    #movingimage8 {
+        height: auto;
+        /* width: 150%; */
+    }
+
+    #layer3 {
+        bottom: 21%;
+    }
+
+    #mountainimg1,
+    #mountainimg2,
+    #mountainimg3,
+    #mountainimg4 {
+        /* 
+        width: 10%;
+        height: 10%; */
+        position: relative;
+        width: 1000px;
+    }
+
+
+    .mainbody {
+
+        position: absolute;
+        bottom: -400px;
+
+    }
+
 }
