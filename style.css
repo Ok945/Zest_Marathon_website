@@ -415,3 +415,78 @@ body {
     }
 
 } 
+ @media screen and (max-width: 450px) and (max-height:668px) {
+
+    .image-container {
+        bottom: 36%;
+    }
+
+    .images-box {
+        top: 200px;
+    }
+
+    
+    #moving-image1,
+    #moving-image2 {
+        height: auto;
+        width: 150%;
+    }
+
+
+    .humans {
+        bottom: -4%;
+    }
+
+    #moving-image3,
+    #moving-image4,
+    #moving-image5,
+    #moving-image6,
+    #moving-image7,
+    #moving-image8,
+    #moving-image9,
+    #moving-image10,
+    #moving-image11 {
+
+        width: 76px;
+        height: 67px;
+    }
+
+
+
+    .inner-layer {
+        bottom: 39%;
+    }
+
+
+    #movingimage5,
+    #movingimage6,
+    #movingimage7,
+    #movingimage8 {
+        height: auto;
+         width: 150%; 
+    }
+
+    #layer3 {
+        bottom: 30%;
+    }
+
+    #mountainimg1,
+    #mountainimg2,
+    #mountainimg3,
+    #mountainimg4 {
+        
+        width: 10%;
+        height: 10%; 
+        position: relative;
+        width: 1000px;
+    }
+
+
+    .mainbody {
+
+        position: absolute;
+        bottom: -81%;
+
+    }
+
+} 
