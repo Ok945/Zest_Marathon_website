@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+
+.text-continer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+}
+
+.titleimg {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: -200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleimg img {
+    width: 100px;
+}
+
+.title {
+    font-size: 200px;
+    position: absolute;
+    color: aliceblue;
+}
+
+.whole {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('./images/L0.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.birds {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    left: -1%;
+    /* width: 100px;
+    height: 200px; */
+}
+
+.bird-body,
+.bird-wing {
+    fill: #2d113f;
+}
+
+.image-container {
+    position: absolute;
+    display: flex;
+    /* 1 row */
+    animation: moveImages 20s linear infinite;
+    z-index: 10;
+}
+
+.humans {
+    position: absolute;
+    display: flex;
+    /* 1 row */
+    /* animation: moveImages 20s linear infinite; */
+    z-index: 12;
+    bottom: 2%;
+    left: 10%;
+    flex-direction: row;
+}
+
+.inner-layer {
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    animation: moveImages 15s linear infinite;
+    display: flex;
+    z-index: 5;
+    bottom: 5%;
+}
+
+#layer3 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    bottom: 50%;
+    animation: moveImages 12s linear infinite;
+}
+
+
+
+.mountainimg {
+    position: absolute;
+    width: 151%;
+    height: 171%;
+}
+
+#moving-image1,
+#moving-image2,
+#moving-image4 {
+    height: 110vh;
+    width: 100%;
+    position: relative;
+
+}
+
+#moving-image3,
+#moving-image4,
+#moving-image5,
+#moving-image6,
+#moving-image7,
+#moving-image8,
+#moving-image9,
+#moving-image10,
+#moving-image11 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#moving-image4 {
+    left: 25%
+}
+
+#moving-image5 {
+    left: 50%;
+}
+
+#moving-image6 {
+    left: 70%;
+}
+
+#moving-image7 {
+    left: 88%;
+}
+
+#moving-image8 {
+    left: 99%;
+}
+
+
+#moving-image9 {
+    left: 60%;
+}
+
+#moving-image10 {
+    left: 70%;
+}
+
+#moving-image11 {
+    left: 79%;
+}
+
+
+
+.cloud-container {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    /* 1 row */
+    animation: moveClouds 30s linear infinite;
+}
+
+#clouds {
+    height: 100px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+@keyframes moveImages {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
