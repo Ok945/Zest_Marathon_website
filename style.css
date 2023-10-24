@@ -342,7 +342,7 @@ body {
 
 
 
- /* @media screen and (max-width: 450px) and (max-height:900px) {
+ @media screen and (max-width: 450px) and (max-height:900px) {
 
     .image-container {
         bottom: 36%;
@@ -490,4 +490,4 @@ body {
         bottom: -81%;
 
     }
-} */
+} 
