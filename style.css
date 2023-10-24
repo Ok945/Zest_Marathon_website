@@ -242,7 +242,11 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
+
+    .image-container {
+        bottom: 36%;
+    }
 
     /* Styles for small screens go here */
     #moving-image1,
@@ -286,7 +290,7 @@ body {
     }
 
     #layer3 {
-        bottom: 21%;
+        bottom: 10%;
     }
 
     #mountainimg1,
@@ -304,7 +308,7 @@ body {
     .mainbody {
 
         position: absolute;
-        bottom: -400px;
+        bottom: -684px;
 
     }
 
