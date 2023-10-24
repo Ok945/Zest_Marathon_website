@@ -334,13 +334,13 @@ body {
 
         position: absolute;
         /* bottom: -680px; */
-        bottom: -70%;
+        bottom: -80%;
 
     }
 
 }
 
- @media screen and (max-width: 450px) and (max-height:900px) {
+ /* @media screen and (max-width: 450px) and (max-height:900px) {
 
     .image-container {
         bottom: 36%;
@@ -489,4 +489,4 @@ body {
 
     }
 
-} 
+}  */
