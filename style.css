@@ -435,7 +435,23 @@ body {
     }
 
 } 
- @media screen and (max-width: 450px) and (max-height:668px) {
+ @media screen and (max-width: 370px) and (max-height:555px) {
+
+
+
+
+    .titleimg img {
+        width: 70px;
+    }
+    
+    .title {
+        font-size: 50px;
+       
+    }
+
+
+
+
 
     .image-container {
         bottom: 36%;
@@ -467,8 +483,8 @@ body {
     #moving-image10,
     #moving-image11 {
 
-        width: 76px;
-        height: 67px;
+        width: 40px;
+        height: 40px;
     }
 
 
@@ -505,7 +521,7 @@ body {
     .mainbody {
 
         position: absolute;
-        bottom: -81%;
+        bottom: -89%;
 
     }
 } 
