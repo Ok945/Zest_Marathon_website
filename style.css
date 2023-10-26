@@ -1,6 +1,29 @@
-body {
+html {
+    width: 100vw;
+
+}
+
+/* ------------------------------ header classes */
+
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, Min(100%, 12rem)); */
+    place-content: center;
+    /* min-height: 100vh; */
+    /* background: linear-gradient(90deg,rgba(2,0,6,1) 0%,rgba(9,9,121,1)35%, rgba(0,212,255,1)); */
+
+    font: 900 1.25em/1.25 sans-serif;
+    text-align: center;
+    text-transform: uppercase;
     /* overflow: hidden; */
+    /* max-height:30vh; */
 }
 
 
@@ -8,10 +31,20 @@ body {
 
 
 
+.whole {
 
+    display: flex;
+    flex-direction: column;
+    /* max-height: 100vh; */
+    overflow: hidden;
+    overflow: hidden;
+    max-width: 100vw;
+    min-height: 95vh;
+    background: url(./images/L0.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
-
-
+}
 
 .header {
     display: flex;
@@ -44,29 +77,19 @@ body {
     font-size: 48px;
     width: max-content;
     height: fit-content;
-    color: #f9689a;
-    text-shadow: -3px -3px 0 #77caff;
+    color: #15452c;
+    text-shadow: -3px -3px 0 #395a4236;
     margin: 0;
 
 }
 
 .title h2 {
-    margin: 10px;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin: 5px 10px;
+    margin-bottom: 0px;
 }
 
-.ourTheme h2,
-.markTheMoment h2 {
-    margin: 0.5em 0em 0em 0em;
-    position: relative;
-    width: max-content;
-    height: fit-content;
-    font-size: 2em;
-
-
-    background: -webkit-linear-gradient(top, #f9d400 15%, #f89b00 35%, #f9d400 70%);
-    -webkit-background-clip: text;
-    /* -webkit-text-fill-color:transparent;  */
-}
 
 
 .fitIndiaTitle {
@@ -99,69 +122,10 @@ body {
 
 
 
-.text-continer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
-}
-
-.titleimg {
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    top: -200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titleimg img {
-    width: 100px;
-}
-
-.title {
-    font-size: 100px;
-    position: absolute;
-    color: aliceblue;
-}
-
-/* .whole {
-    position: relative;
-    width: 100vw;
-    height: 110vh;
-    overflow: hidden;
-    background-image: url('./images/L0.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-
-} */
 
 
 
 
-
-
-.whole {
-
-    display: flex;
-    flex-direction: column;
-    /* max-height: 100vh; */
-    overflow: hidden;
-    overflow: hidden;
-    max-width: 100vw;
-    min-height: 93vh;
-    background: url(./images/L0.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
 
 
 
@@ -188,25 +152,20 @@ body {
 .images-box {
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* top: 100px; */
     bottom: 0px;
+    overflow: hidden;
 }
-
-
-
-
-
 
 
 .image-container {
     position: absolute;
     display: flex;
     /* 1 row */
-    animation: moveImages 10s linear infinite;
+    animation: moveImages 30s linear infinite;
     z-index: 10;
 }
 
@@ -214,7 +173,7 @@ body {
     position: absolute;
     display: flex;
     z-index: 12;
-    bottom: 2%;
+    bottom: 0px;
     left: 10%;
     flex-direction: row;
 }
@@ -225,8 +184,8 @@ body {
     position: absolute;
     display: flex;
     z-index: 5;
-    animation: moveImages 20s linear(0 0%, 1.4 48.82%) infinite;
-    bottom: 30px;
+    animation: moveImages 40s linear(0 0%, 1.4 48.82%) infinite;
+    bottom: -30px;
 }
 
 #movingimage5,
@@ -239,27 +198,15 @@ body {
 
 }
 
-
-
-
-
-
 #layer3 {
 
     position: relative;
     display: flex;
     z-index: 3;
-    bottom: 120%;
+    bottom: 50vh;
     left: 200%;
     animation: moveImages 50s linear(0 0%, 0.44 97.65%) infinite;
 }
-
-
-
-
-
-
-
 
 .mountainimg {
     position: relative;
@@ -287,8 +234,8 @@ body {
 #moving-image10,
 #moving-image11 {
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 130px;
     margin-left: 5px;
     margin-right: 5px;
 }
