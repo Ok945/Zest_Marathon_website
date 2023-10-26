@@ -22,6 +22,7 @@ body {
     font: 900 1.25em/1.25 sans-serif;
     text-align: center;
     text-transform: uppercase;
+    background: #172156;
     /* overflow: hidden; */
     /* max-height:30vh; */
 }
@@ -320,18 +321,54 @@ body {
 
 
 
-
-
-.mainbody {
-    height: 100vh;
+.main_body {
+    /* margin-top: 2em; */
     width: 100%;
-    background: #172156;
-    z-index: 4;
-    /* margin-top: 10px; */
-    position: relative;
-    bottom: 47px;
+    /* height: 100vh; */
+    /* background: white; */
+    /* position: relative; */
+    /* animation: moveup 1s ease-in-out; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    /* bottom: 107px; */
+    /* background: linear-gradient(90deg, rgba(2,0,0.6,1)0%, rgba(9,9,121,1)35%, rgba(0,212,255,1)100%); */
 }
 
+
+
+@keyframes fadeInGrow {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.themeDesc{
+    margin-top: 1em;
+    background: #edebffba;
+    padding: 1em 2em;
+    border-radius: 1.5em;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.themeText{
+    margin-top: 1em;    
+}
 
 
 @media screen and (max-width: 450px) and (max-height:1090px) {
@@ -597,3 +634,48 @@ body {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER   */
+
+footer{
+    text-transform: none;
+}
+
+.row h5{
+    font-weight: 600;
+    
+}
+.social{
+    text-decoration: none;
+}
+
+.text-reset{
+    text-decoration: none !important;
+}
+
+.head1 .head2 .head3{
+    margin-top: 20px;
+}
+
+.fa-phone{
+    rotate: 90deg;
+}
+
+
+.
